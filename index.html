@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1>Snake Game</h1>
+    <h2 id="score">Score: 0</h2>
+    <h2 id="high-score">High Score: 0</h2>
+    <canvas id="board"></canvas>
+    <!-- On-screen arrow controls -->
+    <div class="controls">
+        <button onclick="changeDirection({code: 'ArrowUp'})">⬆️</button>
+        <div class="horizontal-controls">
+            <button onclick="changeDirection({code: 'ArrowLeft'})">⬅️</button>
+            <button onclick="changeDirection({code: 'ArrowRight'})">➡️</button>
+        </div>
+        <button onclick="changeDirection({code: 'ArrowDown'})">⬇️</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
